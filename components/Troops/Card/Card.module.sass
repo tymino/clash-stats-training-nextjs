@@ -1,0 +1,43 @@
+$imageSize: 64px
+$borderVar: 1px solid #000000
+
+.sectionContainer
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  max-width: 800px
+
+.sectionTitle
+  margin-left: 4px
+  border-bottom: $borderVar
+  font-size: 1.1rem
+
+.cardsContainer
+  display: flex
+  flex-wrap: wrap
+
+.cardWrapper
+  position: relative
+
+  margin: 4px
+
+
+.cardImage
+  width: $imageSize
+  height: $imageSize
+  border: $borderVar
+  border-radius: 5px
+
+.cardLevel
+  position: absolute
+  right: 2px
+  bottom: 6px
+  border-radius: 3px
+
+  padding: 0 3px
+
+  background: #ffffff
+  border: $borderVar
+
+  font-size: .8rem
+  color: #000000

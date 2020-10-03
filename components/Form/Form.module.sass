@@ -1,0 +1,105 @@
+$heightInput: 48px
+
+$colorBorder: #000000
+$borderStyle: 2px solid #000000
+$colorBack: #ffffff
+
+
+.containerForm
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+  
+// form and elements
+.form
+  display: flex
+  flex-direction: column
+  border: $borderStyle
+  border-radius: 5px
+  padding: 20px 40px
+
+  background-color: $colorBack
+
+.formTitle
+  align-self: flex-start
+  font-size: 1.2rem
+  padding-bottom: 10px
+  cursor: default
+
+.formInputWrapper
+  display: flex
+  align-items: center
+
+.formSimb
+  display: flex
+  align-items: center
+  height: $heightInput
+  padding-left: 10px
+
+  border-top: $borderStyle
+  border-bottom: $borderStyle
+  border-left: $borderStyle
+  border-right: none
+  border-radius: 5px 0px 0px 5px
+
+  font-size: 1.1rem
+
+.formInput
+  width: 200px
+  height: $heightInput
+
+  border-radius: 0px 5px 5px 0px
+  border-top: $borderStyle
+  border-right: $borderStyle
+  border-bottom: $borderStyle
+  border-left: none
+  outline: none
+  background-color: $colorBack
+
+  font-size: 1.3rem
+  font-family: 'Fredoka One'
+
+  &::placeholder
+    color: #d3d3d3
+
+.formButton
+  align-self: center
+  margin-top: 16px
+  padding: 0 16px
+  height: $heightInput
+
+  border-radius: 5px
+  background-color: #78f128
+  border: $borderStyle
+  outline: none
+
+  color: #000000
+  font-family: 'Fredoka One'
+  font-size: 1.1rem
+
+  cursor: pointer
+
+  &:hover
+    background-color: #68dd19
+
+.errorMsg
+  width: 270px
+  margin-top: 24px
+  padding: 6px 12px
+  background-color: #ce0000
+
+  border: 2px solid #ffffff
+  border-radius: 5px
+
+  color: #ffffff
+  font-size: 1.1rem
+  text-align: center
+  cursor: pointer
+
+  &:hover
+    color: #d3d3d3
+    background-color: #df0000
+    border: none
+    transition: color .35s
