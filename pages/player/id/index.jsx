@@ -17,7 +17,7 @@ export default function PlayerID(props) {
   if (props.reason) {
     router.push({
       pathname: '/player',
-      query: { error: 'Player not found!' }
+      query: { error: 'Need static IP for API Clash of Clans!' }
     });
     return null;
   }
