@@ -14,7 +14,7 @@ import Troops from '../../../components/Troops/Troops';
 export default function PlayerID(props) {
   const router = useRouter();
 
-  if (props.reason == 'notFound') {
+  if (props.reason) {
     router.push({
       pathname: '/player',
       query: { error: 'Player not found!' }
