@@ -1,1 +1,1 @@
-clash-stats-training-project-nextjs
+clash-stats-training-nextjs
